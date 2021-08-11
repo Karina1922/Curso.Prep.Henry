@@ -1,0 +1,34 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Variables
+Strings
+Funciones (argumentos, return)
+Declaraciones if
+Valores booleanos (true, false)
+
+#Variable: es una forma de guardar datos en un espacio de la memoria de la computadora, para ser usado mas tarde. Se usa la palabra var, se deja un espacio, el nombre que le damos a la variable, podemos dale un valor(=) 
+#String: es un tipo de dato, una cadena de texto, que va entre comillas, purde ser simple(''),o doble ("").
+var nombrePerro = 'firulais'
+
+#Funciones: procedimiento que indica hacer una accion.
+function miFuncion (){}
+
+*argumentos: son los valores que se les da a un procedimiento, cuando este es llamado. Agregamos una variable a los parentesis cuando declaramos la funcion.
+*return: las funciones pueden devolver un valor a traves de la declaracion return.
+function sumarDosNumeros (a; b){
+var suma = a + b 
+return suma;
+}
+sumarDosNumeros(1; 5); //6
+
+#Declaraciones if: es una palabra clave, una forma de que nuestra funcion verifique si algo es verdadero. depende del resultado quiero que haga esto.
+function puedeManejar(edad){
+    if(edad > 18){
+        return true;
+    }
+    return false;
+}
+puedeManejar (22); //true
+
+#Valores Booleanos: sigfnifica que tiene dos opciones; en Javascrips usamos para significar verdadero o falso ( true or false).
+
