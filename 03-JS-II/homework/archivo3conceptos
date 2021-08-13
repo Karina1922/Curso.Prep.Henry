@@ -1,0 +1,49 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* `for`
+* `&&`, `||`, `!`
+
+# 'for' : bucles for es una secuencia de instrucciones de codigo que se ejecuta repetidas veces,hasta que devuelve lo que estabamos buscando o se detiene despues de un cierto tiempo.
+Es similar al "if" pero mas complejo, primero se escribe la palabra clave 'for', seguida de parentesis, luego abrir y cerrar llaves.
+Dentro de los parentesis tenemos que declarar tres cosas.
+1- Primero una variable, esto es sobre lo que se repetira el bucle.
+2- Segundo una extension condicional, el ciclo continuara hasta que la declaracion sea falsa.
+3- Tercero incrementamos nuestra variable.
+Las tres declaraciones estan separadas por punto y coma.
+for (let i===o; i<10; i++){
+    ||  |declaramos una variable| expresion condicional| incrementamos la variable|
+    console.log(i);
+} 
+En este ejemplo, inicialmente establecemos nuestra variable i en o, el ciclo se ejecutara y cada vez que llegue al final aumentara el contador en uno. El bucle 'for´evaluara la expresion condicional. Si es true, se ejecutara nuevamente, si es false dejara de funcionar.
+
+#'&&': es un operador logico(significa 'y'). Se puede combinar dos expresiones d igualdad y preguntar si alguna de las dos es verdadera, si ambas son verdaderas o si ninguna es verdadera.
+Este operador evaluara ambas expresiones y devolvera verdadero si ambas expresiones son true. Si uno o ambas de ellos es falso, este devolvera false.
+if(100 >10 && 10 === 10){
+    console.log( 'ambas declaraciones son ciertas, este codigo se ejecutara');
+}
+
+if(10 === 9 && 10 >9){
+    console.log(' una de las declaraciones es falsa, por lo que && devolvera false, y este codigo no se ejecutara');
+}
+
+#'||': es unoperador logico 'o'('or'). Escrito con dos barras  verticales(||). determinara siuna de las expresiones es true.
+Devolvera true si una o ambas de las expresiones es true. Devolvera false si ambas expresiones son false.
+if(100 > 10 || 10 === 10){
+    console.log(´'ambas declaraciones son ciertas, este codigo se ejecutara');
+}
+if(10 === 9 || 10 > 9){
+    console.log('una de las declaraciones es true, por lo que || devolvera true y este codigo se ejecutara');
+}
+
+if(10 === 9 || 1 > 9){
+    console.log('ambas declaraciones son falsas por lo tanto || devolvera false y este codigo no se ejecutara');
+}
+
+# '!': es un operador logico NOT(NO).Esta escrito con un solo signo de exclamacion(!). El operador NOT devolvera el valor booleano opuesto de lo que se pasa.
+if(! false){
+    console.log('El ! devolvera true, porque es lo contrario de false, asi que este codigo se ejecutara');
+}
+
+if(!(1===1)){
+    console.log(' 1 esigual a 1, de modo que la expresion devuelve true. El operador ! devolvera lo contrario de eso, por lo que este codigo no se ejecutara');
+}
