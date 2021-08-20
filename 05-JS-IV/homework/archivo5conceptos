@@ -1,0 +1,75 @@
+Conceptos:
+# Objetos
+# Propiedades
+# Metodos
+# Bucle for ...incrementamos
+# Notacion de puntos vs notacion de corchetes
+
+- Objetos: es un contenedor de datos, los objetos y los arrays son similares en ciertas cosas, y muy diferentes en otras.
+Mientras que los arrays pueden contener multiples elementos relacionados, los objetos contienen mucha informacion sobre una sola cosa. 
+
+-En javascript, un objeto es un contenedor de propiedades, donde una propiedad tiene un nombre y un valor.
+Los objetos usan un concepto llamado pares de clave valor.
+La clave es el identificador y el valor es el valor que queremos guardar en esa clave.
+Los objetos pueden contener muchos pares clave-valor , deben estar separados por una coma.
+(Sin punto y coma dentro de un objeto)
+Las claves son unicas dentro de un objeto, solo puede haber una clave con ese nombre, aunque varias claves pueden tener el mismo valor. Los valores pueden tener cualquier tipo de dato javascript, cadena, numero, booleano, matriz, funcion, incluso otro objeto.
+
+Crearemos un objeto Usuario
+
+ const Usuario = {
+     username: 'juan.perez',
+     password: 'loremipsumpwd123'
+     lovesjavascript: true,
+     favoriteNumber: 42
+ };
+
+-Metodos: en los objetos los valores se pueden establecer en funciones.
+Las funciones guardadas en un objeto se denominan metodos.
+Podemos establecer una clave para un nombre y el valor para una funcion. Al igual que otras veces, llamamos al metodo usando notacion de puntos y parentesis finales.
+
+  const nuevoObjeto= {
+      decir Hola: function(){
+          console.log('Hola a todo el mundo!');
+      }
+  }
+  nuevoObjeto.decirHola(); // Hola a todo el mundo!
+
+- Bucle  for...in: los objetos no contienen indice numerico, por lo que el bucle estandar no funcionara para los objetos.
+Javascript tiene un segundo tipo de bucle for integrado llamado "for...in loop". Es una sintaxis ligeramente diferente, comienza igual pero entre parentesis declararemos una variable, la palabra in y el nombre del objeto.
+Esto nrecorrera cada clave del objeto y finalizara cuando se hayan iterado todas las claves.
+Podemos usar esta clave, y la notacion de corchetes, en nuestro bucle for para acceder al valor asociado con esa clave.
+
+   const Usuario= {
+       username: 'juan.perez',
+       password: 'loremipsumpwd123',
+       lovesJavascript: true,
+       favoriteNumber: 42
+   };
+    for (let clave in usuario){
+        console.log(clave);
+        console.log(usuario [clave]);
+    }
+    // username
+    //'juan.perez'
+    //password
+    //'loremipsumpwd123'
+    //lovesJavascript
+    //true
+    //favoriteNumber
+    //42
+
+
+- Notacion de puntos vs notacion de corchetes: hay dos formas diferentes de llamar al objeto, usando puntos o usando corchetes.
+* Con la notacion de puntos podemos llamar al nombre del objeto, un punto y el nombre de la clave.
+ 
+   user.username; // juan.perez
+
+
+* Con la notacion de corchetes es como llamar a un elemento en una matriz, con corchetes debemos usar una cadena o un numero, o una variable que apunte a una cadena o numero, se puede llamar a cada clave envolviendola con comillas.
+
+   const passString = 'pasword'
+   user['username']; // juan.perez
+   user[passString]; // loremipsumpwd123
+
+Generalmente los corchetes casi siempre se usan con variables.
